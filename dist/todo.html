@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TODOアプリ</title>
+  <script type="module" crossorigin src="/todo-app/assets/todo-Dsp-1Uix.js"></script>
+  <link rel="modulepreload" crossorigin href="/todo-app/assets/firebase-DelRoNrK.js">
+</head>
+
+<body>
+	<h1>TODOアプリ</h1>
+
+	<p>
+		ログイン中：
+		<span id="user-email"></span>
+	</p>
+
+	<button id="sign-out-button">サインアウト</button>
+
+	<hr>
+
+	<h2>TODOを追加</h2>
+
+	<input type="text" id="todo-input" placeholder="TODOを入力してください">
+
+	<button id="add-button">追加</button>
+
+	<p id="message"></p>
+
+	<hr>
+
+	<h2>TODO一覧</h2>
+
+	<!-- 現在のTODO件数 -->
+	<p>
+		現在のTODO件数：
+		<span id="todo-count">0</span> 件
+	</p>
+
+	<!-- 表示切り替え -->
+	<button class="filter-button" data-filter="all">全て</button>
+	<button class="filter-button" data-filter="incomplete">未完了</button>
+	<button class="filter-button" data-filter="completed">完了</button>
+
+	<!-- TODO一覧 -->
+	<ul id="todo-list"></ul>
+
+	<hr>
+
+	<!-- 一括削除 -->
+	<button id="delete-all-button">
+		TODOをすべて削除
+	</button>
+
+</body>
+
+</html>

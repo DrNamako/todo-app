@@ -8,9 +8,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
-        user: resolve(import.meta.dirname, 'user.html'),
-        'sign-up': resolve(import.meta.dirname, 'sign-up.html'),
+        todo: resolve(import.meta.dirname, 'todo.html'),
       },
     },
   },
 });
+
