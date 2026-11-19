@@ -1,14 +1,14 @@
+
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
+  base: '/todo-app/',
   build: {
     rollupOptions: {
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
-
         user: resolve(import.meta.dirname, 'user.html'),
-
         'sign-up': resolve(import.meta.dirname, 'sign-up.html'),
       },
     },
